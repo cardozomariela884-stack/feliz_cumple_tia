@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Cumpleaños, Tía!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="#inicio">Inicio</a>
+        <a href="#cartas">Cartas</a>
+        <a href="#agradecimientos">Agradecimientos</a>
+        <a href="#admiracion">Admiro en vos</a>
+        <a href="#recuerdos">Recuerdos</a>
+        <a href="#gracias">Gracias</a>
+    </nav>
+
+    <!-- INICIO / PORTADA -->
+    <section id="inicio" class="section hero">
+        <div class="hero-content">
+            <h1 class="title-handwriting">Feliz Cumpleaños, Tía ♡</h1>
+            <p class="hero-subtitle">
+                Hoy es un día muy especial, porque una persona increíble como vos merece todo lo bonito del mundo. 
+                Gracias por ser siempre una luz en nuestras vidas.
+            </p>
+
+            <div class="polaroid main-polaroid">
+                <div class="tape"></div>
+                <!-- Asegúrate de colocar tu imagen con este nombre en la misma carpeta -->
+                <img src="foto_principal.jpg" alt="Foto familiar Mateo, Alejandro y Tía">
+                <div class="polaroid-caption">La mejor mamá y tía del mundo ♡</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARTAS (Dividido para Mateo y Alejandro) -->
+    <section id="cartas" class="section">
+        <h2 class="section-title">💌 Cartas para vos... ♡</h2>
+
+        <div class="tabs-container">
+            <button class="tab-btn active" onclick="switchTab('mateo')">Carta de Mateo (Tu Hijo)</button>
+            <button class="tab-btn" onclick="switchTab('alejandro')">Carta de Alejandro (Tu Sobrino)</button>
+        </div>
+
+        <div class="paper-card">
+            <!-- CARTA DE MATEO -->
+            <div id="carta-mateo" class="tab-content active">
+                <h3>De Mateo para Mamá ♡</h3>
+                <p>
+                    ¡Feliz cumple, mami! Gracias por ser mi mamá y por siempre estar para mí, sos mi persona favorita en este mundo. 
+                    No hay un solo momento en el que no hayas estado para mí; por más de que esté argel, triste, o no quiera hablar, 
+                    vos siempre estuviste.
+                </p>
+                <p>
+                    Sos la mejor mamá del mundo y te mereces lo mejor. Gracias por ser mi mamá, por estar siempre para mí, 
+                    por darme todo lo que me das: el amor, lo material, el cariño y la buena educación que siempre me diste.
+                </p>
+                <p class="signature">¡Feliz cumple, amor de mi vida! Te amo un montón. ♡<br><strong>Con amor, Tu hijo Mateo</strong></p>
+            </div>
+
+            <!-- CARTA DE ALEJANDRO -->
+            <div id="carta-alejandro" class="tab-content">
+                <h3>De Alejandro para mi Segunda Mamá ♡</h3>
+                <p>
+                    ¡Feliz cumpleaños a mi segunda mamá! Gracias por todos los consejos y las enseñanzas que me diste, 
+                    y por recibirme siempre en tu casa haciéndome sentir uno más de tu familia.
+                </p>
+                <p>
+                    Y perdón si te llegué a fallar en algún momento, tía... perfecto no soy, y a pesar de todo estás para mí siempre. 
+                    Te aprecio demasiado y sos una de las personas más especiales para mí.
+                </p>
+                <p class="signature">
+                    Gracias por todo, tía. Espero que la pases de lo mejor en tu día, te mereces todo lo bueno. ¡Te quiero mucho, tía!<br>
+                    <strong>Con mucho cariño, Alejandro</strong>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- AGRADECIMIENTOS -->
+    <section id="agradecimientos" class="section">
+        <h2 class="section-title">♡ Cosas que queremos agradecerte</h2>
+
+        <div class="columns-grid">
+            <div class="agradecimientos-col">
+                <h3>De parte de Mateo:</h3>
+                <ul>
+                    <li><span class="heart-bullet">♥</span> Gracias por estar siempre incondicionalmente a mi lado, incluso cuando estoy triste o argel.</li>
+                    <li><span class="heart-bullet">♥</span> Gracias por darme todo tu amor, cariño y contención de cada día.</li>
+                    <li><span class="heart-bullet">♥</span> Gracias por la buena educación, los valores y todo tu esfuerzo por mí.</li>
+                </ul>
+            </div>
+
+            <div class="agradecimientos-col">
+                <h3>De parte de Alejandro:</h3>
+                <ul>
+                    <li><span class="heart-bullet">♥</span> Gracias por abrirme siempre las puertas de tu casa y hacerme sentir uno más de la familia.</li>
+                    <li><span class="heart-bullet">♥</span> Gracias por todos los consejos, las enseñanzas y la paciencia constante.</li>
+                    <li><span class="heart-bullet">♥</span> Gracias por estar siempre presente a pesar de todo y ser como mi segunda mamá.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ADMIRACIÓN -->
+    <section id="admiracion" class="section">
+        <h2 class="section-title">☆ Lo que más admiramos de vos</h2>
+
+        <div class="sticky-notes-grid">
+            <div class="sticky-note yellow">
+                <p><strong>Tu fuerza incondicional:</strong> Porque siempre salís adelante y nos demostrás cómo cuidar y proteger a la familia con una sonrisa.</p>
+            </div>
+            <div class="sticky-note pink">
+                <p><strong>Tu nobleza y cariño:</strong> La forma en que nos tratás, nos aconsejás y hacés que el hogar sea un lugar seguro para los dos.</p>
+            </div>
+            <div class="sticky-note blue">
+                <p><strong>Sos un ejemplo:</strong> De todo lo bonito que se puede ser como mamá, como tía y como persona. ♡</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- RECUERDOS -->
+    <section id="recuerdos" class="section">
+        <h2 class="section-title">📷 Nuestros recuerdos</h2>
+
+        <div class="gallery">
+            <div class="polaroid">
+                <img src="foto_principal.png" alt="Recuerdo en familia">
+                <div class="polaroid-caption">Momentos simples... que son los mejores ♡</div>
+            </div>
+            <div class="polaroid">
+                <img src="foto_principal.jng" alt="Recuerdo Mateo y Tía">
+                <div class="polaroid-caption">A tu lado, todo es mejor ♡</div>
+            </div>
+            <div class="polaroid">
+                <img src="foto_principal.jng" alt="Recuerdo Alejandro y Tía">
+                <div class="polaroid-caption">Gracias por estar siempre ♡</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GRACIAS / CIERRE -->
+    <section id="gracias" class="section hero text-center">
+        <h2 class="title-handwriting">Gracias por ser parte de nuestras vidas ♡</h2>
+        <p class="final-message">
+            Te queremos muchísimo.<br>
+            ¡Que tengas el mejor de los cumpleaños!
+        </p>
+
+        <div class="sticky-note pink inline-note">
+            <p>Que este nuevo año te traiga toda la felicidad del mundo, porque te lo merecés. ♡</p>
+        </div>
+
+        <p class="signature-final">
+            Siempre juntos,<br>
+            <strong>Mateo & Alejandro ♡</strong>
+        </p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
